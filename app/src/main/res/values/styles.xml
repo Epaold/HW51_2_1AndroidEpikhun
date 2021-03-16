@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#787AFF</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">#99CCF4</item>
+    </style>
+
+    <style name="CalcButtonsStyle" parent="AppTheme">
+        <item name="android:backgroundTint">@color/colorNormalKeys</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="CalcButtonsStyle.Operation">
+        <item name="android:backgroundTint">@color/colorActionKeys</item>
+    </style>
+
+    <style name="CalcButtonsStyle.Sci">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="CalcButtonsStyle.Sci.Operation1">
+        <item name="android:backgroundTint">@color/colorActionKeys</item>
+    </style>
+
+    <style name="CalcButtonsStyle.Sci.Operation2">
+        <item name="android:backgroundTint">@color/colorAction2Keys</item>
+    </style>
+
+
+</resources>

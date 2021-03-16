@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sci_keyboard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="invisible"
+    tools:visibility="visible">
+
+
+    <Button
+        android:id="@+id/sciC"
+        style="@style/CalcButtonsStyle.Sci.Operation2"
+        android:text="C"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciSign"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toEndOf="@id/sciC"
+        android:text="\u00b1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciPercent"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toEndOf="@id/sciSign"
+        android:text="%"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciDiv"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toEndOf="@id/sciPercent"
+        android:text="\u00f7"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci7"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sciC"
+        android:layout_alignStart="@id/sciC"
+        android:text="7"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci8"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sciC"
+        android:layout_toEndOf="@id/sci7"
+        android:text="8"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci9"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sciC"
+        android:layout_toEndOf="@id/sci8"
+        android:text="9"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciMul"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sciC"
+        android:layout_toEndOf="@id/sci9"
+        android:text="\u00d7"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/sci4"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci7"
+        android:layout_alignStart="@id/sci7"
+        android:text="4"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci5"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci7"
+        android:layout_toEndOf="@id/sci4"
+        android:text="5"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci6"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci7"
+        android:layout_toEndOf="@id/sci5"
+        android:text="6"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciMinus"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci7"
+        android:layout_toEndOf="@id/sci6"
+        android:text="-"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/sci1"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci4"
+        android:layout_alignStart="@id/sci4"
+        android:text="1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci2"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci4"
+        android:layout_toEndOf="@id/sci1"
+        android:text="2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci3"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci4"
+        android:layout_toEndOf="@id/sci2"
+        android:text="3"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciPlus"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci4"
+        android:layout_toEndOf="@id/sci3"
+        android:text="+"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/sci0"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci1"
+        android:layout_alignStart="@id/sci1"
+        android:text="0"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sci00"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci1"
+        android:layout_alignStart="@id/sci2"
+        android:text="00"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciDot"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci1"
+        android:layout_toEndOf="@id/sci00"
+        android:text="."
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciEqual"
+        style="@style/CalcButtonsStyle.Sci"
+        android:layout_below="@id/sci1"
+        android:layout_toEndOf="@id/sciDot"
+        android:text="="
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciMR"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toEndOf="@id/sciDiv"
+        android:text="MR"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciRoot"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciC"
+        android:layout_toEndOf="@id/sciMR"
+        android:text="\u221a"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciMplus"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciMul"
+        android:layout_toEndOf="@id/sciDiv"
+        android:text="M+"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciXy"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciMplus"
+        android:layout_toEndOf="@id/sciMplus"
+        android:text="Xy"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciMminus"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciMinus"
+        android:layout_toEndOf="@id/sciMinus"
+        android:text="M-"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciPi"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciMminus"
+        android:layout_toEndOf="@id/sciMminus"
+        android:text="\u03c0"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciMs"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciPlus"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/sciPlus"
+        android:text="MS"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciXm1"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciMs"
+        android:layout_toEndOf="@id/sciMs"
+        android:text="1/X"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciDeg"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciEqual"
+        android:layout_toEndOf="@id/sciEqual"
+        android:text="DEG"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sciRad"
+        style="@style/CalcButtonsStyle.Sci.Operation1"
+        android:layout_alignTop="@id/sciDeg"
+        android:layout_toEndOf="@id/sciDeg"
+        android:text="RAD"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
+
+

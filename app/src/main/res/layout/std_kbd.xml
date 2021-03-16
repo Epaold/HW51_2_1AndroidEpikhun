@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/std_keyboard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+
+    <Button
+        android:id="@+id/buttonC"
+        style="@style/CalcButtonsStyle.Operation"
+        android:text="C"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonSign"
+        style="@style/CalcButtonsStyle.Operation"
+        android:layout_alignTop="@id/buttonC"
+        android:layout_toEndOf="@id/buttonC"
+        android:text="\u00b1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonPercent"
+        style="@style/CalcButtonsStyle.Operation"
+        android:layout_alignTop="@id/buttonC"
+        android:layout_toEndOf="@id/buttonSign"
+        android:text="%"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        style="@style/CalcButtonsStyle.Operation"
+        android:layout_alignTop="@id/buttonC"
+        android:layout_toEndOf="@id/buttonPercent"
+        android:text="÷"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_below="@id/buttonC"
+        android:layout_alignStart="@id/buttonC"
+        style="@style/CalcButtonsStyle"
+        android:text="7"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/buttonC"
+        android:layout_toEndOf="@id/button7"
+        android:text="8"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/buttonC"
+        android:layout_toEndOf="@id/button8"
+        android:text="9"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonMul"
+        style="@style/CalcButtonsStyle.Operation"
+        android:layout_below="@id/buttonC"
+        android:layout_toEndOf="@id/button9"
+        android:text="\u00d7"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/button7"
+        android:layout_alignStart="@id/button7"
+        android:text="4"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/button7"
+        android:layout_toEndOf="@id/button4"
+        android:text="5"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/button7"
+        android:layout_toEndOf="@id/button5"
+        android:text="6"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        style="@style/CalcButtonsStyle.Operation"
+        android:layout_below="@id/button7"
+        android:layout_toEndOf="@id/button6"
+        android:text="-"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/button4"
+        android:layout_alignStart="@id/button4"
+        android:text="1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/button4"
+        android:layout_toEndOf="@id/button1"
+        android:text="2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/button4"
+        android:layout_toEndOf="@id/button2"
+        android:text="3"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        style="@style/CalcButtonsStyle.Operation"
+        android:layout_below="@id/button4"
+        android:layout_toEndOf="@id/button3"
+        android:text="+"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/CalcButtonsStyle"
+        android:layout_width="120dp"
+        android:layout_below="@id/button1"
+        android:layout_alignStart="@id/button1"
+        android:text="0"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonDot"
+        style="@style/CalcButtonsStyle"
+        android:layout_below="@id/button1"
+        android:layout_toEndOf="@id/button0"
+        android:text="."
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        style="@style/CalcButtonsStyle.Operation"
+        android:layout_below="@id/button1"
+        android:layout_toEndOf="@id/buttonDot"
+        android:text="="
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
+
+

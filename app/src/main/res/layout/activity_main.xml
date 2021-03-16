@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription=""
+        android:scaleType="fitXY"
+        android:src="@drawable/klip_1"
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
+
+    <include
+        layout="@layout/filename_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/settings_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="" />
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="198dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-2dp"
+            android:gravity="center|start"
+            android:paddingStart="25dp"
+            android:text="@string/headerText" />
+
+        <TextView
+            android:id="@+id/calcScreen"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/headerText"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#ABB0CC"
+            android:gravity="center|end"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text=""
+            android:textColor="@color/colorScreenText"
+            android:textSize="70sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/calc_type_switch"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/calc_type" />
+
+
+            <TextView
+                android:id="@+id/calc_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/std_type" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/std_kbd"
+            tools:visibility="gone" />
+
+        <include
+            layout="@layout/sci_kbd"
+            tools:visibility="gone" />
+
+
+        <!--    <FrameLayout-->
+        <!--        android:id="@+id/fLayout"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        tools:visibility="visible">-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/defaultBackroundImg"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:contentDescription=""-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:src="@drawable/klip_1"-->
+        <!--            android:visibility="invisible"-->
+        <!--            tools:ignore="HardcodedText"-->
+        <!--            tools:src="@drawable/klip_1" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/backroundImg"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:contentDescription=""-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:visibility="visible"-->
+        <!--            tools:ignore="HardcodedText"-->
+        <!--            />-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/mainlayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            tools:context=".MainActivity">-->
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/headerText"-->
+        <!--                android:layout_width="198dp"-->
+        <!--                android:layout_height="47dp"-->
+        <!--                android:layout_alignParentStart="true"-->
+        <!--                android:layout_alignParentTop="true"-->
+        <!--                android:layout_marginStart="0dp"-->
+        <!--                android:layout_marginTop="-2dp"-->
+
+        <!--                android:gravity="center|start"-->
+
+        <!--                android:paddingStart="14dp"-->
+        <!--                android:text="@string/headerText" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/calcScreen"-->
+        <!--                android:layout_width="360dp"-->
+        <!--                android:layout_height="100dp"-->
+        <!--                android:layout_below="@id/headerText"-->
+        <!--                android:layout_centerHorizontal="true"-->
+        <!--                android:background="#ABB0CC"-->
+
+        <!--                android:gravity="center|end"-->
+        <!--                android:paddingStart="20dp"-->
+        <!--                android:paddingEnd="20dp"-->
+        <!--                android:text=""-->
+        <!--                android:textColor="@color/colorScreenText"-->
+        <!--                android:textSize="70sp" />-->
+
+
+        <!--            <Switch-->
+        <!--                android:id="@+id/calc_type_switch"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:layout_below="@id/calcScreen"-->
+        <!--                android:layout_alignParentStart="true"-->
+        <!--                android:paddingStart="20dp"-->
+        <!--                android:text="@string/calc_type" />-->
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/calc_type_txt"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@id/calcScreen"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:layout_toEndOf="@id/calc_type_switch"-->
+        <!--                android:text="@string/std_type" />-->
+
+        <!--            <FrameLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@id/calc_type_switch">-->
+
+        <!--                <include layout="@layout/std_kbd"-->
+        <!--                    tools:visibility="gone"-->
+        <!--                    />-->
+
+        <!--                <include layout="@layout/sci_kbd"-->
+        <!--                    tools:visibility="visible"-->
+        <!--                    />-->
+        <!--                <include layout="@layout/filename_input"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    tools:visibility="visible"-->
+        <!--                    />-->
+
+
+        <!--            </FrameLayout>-->
+
+        <!--        </RelativeLayout>-->
+
+        <!--    </FrameLayout>-->
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HW51_2AndroidEpikhun</string>
+    <string name="file_loaded">Файл загружен!</string>
+    <string name="load_error">Ошибка загрузки файла!</string>
+    <string name="defaultfont">фон по умолчанию</string>
+    <string name="clearfont">удалить фон</string>
+    <string name="load_font">фон из файла</string>
+
+    <string name="sci_type">Научный</string>
+    <string name="std_type">Простой</string>
+    <string name="calc_type">Вид</string>
+    <string name="headerText">CALCULATOR</string>
+
+</resources>
+
+
+
